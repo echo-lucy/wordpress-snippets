@@ -1,3 +1,4 @@
+<?php
 add_filter('gform_confirmation', 'decode_and_remove_domain_from_redirect_url', 10, 4);
 
 function decode_and_remove_domain_from_redirect_url($confirmation, $form, $entry, $ajax) {
@@ -21,3 +22,4 @@ function decode_and_remove_domain_from_redirect_url($confirmation, $form, $entry
     }
     return $confirmation;
 }
+?>
